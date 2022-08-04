@@ -47,6 +47,7 @@ class Solution:
             if i in pool:
                 pool = pool.replace(i, "", 1)
                 cost = cost.replace(i, "", 1)
+                x-=1
         if len(cost) == 0:
             return True
         if cost.isdigit():
